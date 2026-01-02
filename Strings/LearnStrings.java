@@ -9,6 +9,14 @@ public class LearnStrings {
         // Strings are immutable, even after using the .replace it doesn't change the
         // original.
         System.out.println(name);
+
+        // ****************ESCAPE SEQUENCES********************//
+        System.out.println("He said \"I'm going out\"");
+        // We use the backlash to escape issues like the above
+        System.out.println("c:\\Windows\\...");
+        // Another example
+        System.out.println("This is a boy \nHe Writes Code");
+        // It can also be used to create a new line.
     }
 
 }
