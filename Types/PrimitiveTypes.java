@@ -23,5 +23,13 @@ public class PrimitiveTypes {
         // boolean values are just true or false
         System.out.println(isEligible);
 
+        byte x = 1;
+        byte y = x;
+        x = 2;
+        System.out.println(y);
+        // Primitive types stores actual values, in the code above y prints out as 1
+        // because when we stored x as 1 and stored y as x we stored the y as the value
+        // of x at that moment hence when x is changed it doesn't affect the value
+
     }
 }
