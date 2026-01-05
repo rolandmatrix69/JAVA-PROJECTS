@@ -19,6 +19,7 @@ public class ArEX {
 
         int w = 3;
         w += 3;
+        // Augmented Assignment operators
         System.out.println(w);
 
     }
