@@ -19,6 +19,7 @@ This repository is a personal learning workspace created solely for the purpose 
 - The code may contain incomplete features, rough edges, or insecure patterns used for demonstration.
 - No guarantees of code quality, security, or stability are provided.
 - I'd be using Code with Mosh course on Java for my learning.
+- Comment out certain blocks of code to run
 
 ## How to use
 
