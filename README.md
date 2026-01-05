@@ -18,6 +18,7 @@ This repository is a personal learning workspace created solely for the purpose 
 - This repository is for learning only. Do not use any code here as-is in production.
 - The code may contain incomplete features, rough edges, or insecure patterns used for demonstration.
 - No guarantees of code quality, security, or stability are provided.
+- I'd be using Code with Mosh course on Java for my learning.
 
 ## How to use
 
@@ -35,5 +36,3 @@ This repository is a personal learning workspace created solely for the purpose 
 Unless otherwise specified in a project subfolder, code in this repo is provided for educational purposes. If you want a more permissive license for a particular subproject, add a LICENSE file in that subfolder or open an issue to discuss.
 
 ---
-
-If you'd like, I can also prepend this notice to each project folder's README automatically or generate a short CONTRIBUTING.md tailored for learners. Tell me what you'd prefer.
