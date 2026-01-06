@@ -10,7 +10,7 @@ public class Mortgage {
         // Avoid Magic numbers in your code, Use constants to describe them
 
         Scanner scanner = new Scanner(System.in);
-
+        // Reading Input
         System.out.print("Principal: ");
         int principal = scanner.nextInt();
 
@@ -25,9 +25,9 @@ public class Mortgage {
         double mortgage = principal * ((monthlyInterest * Math.pow((1 + monthlyInterest), numberOfPayments))
                 / (Math.pow((1 + monthlyInterest),
                         numberOfPayments) - 1));
-
+        // Mortgage Formula
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.println(mortgageFormatted);
+        System.out.println("Mortgage: " + mortgageFormatted);
 
     }
 
