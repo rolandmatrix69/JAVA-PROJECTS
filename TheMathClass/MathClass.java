@@ -22,14 +22,14 @@ public class MathClass {
         // // Generates a random nummber between 1 and 100
 
         // //*********** FORMATTING NUMBERS *************************//
-        // NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.UK);
-        // // String dollars = currency.format(1234556778);
+        NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.UK);
+        String dollars = currency.format(1234556778);
         // // Formatting the number in a currency format
         // String dollars = NumberFormat.getCurrencyInstance().format(700000000); //
-        // Alernatively
-        // String percent = NumberFormat.getPercentInstance().format(0.1);
-        // System.out.println(dollars);
-        // System.out.println(percent);
+        // Alernatively; This is also called method chaining
+        String percent = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(dollars);
+        System.out.println(percent);
     }
 
 }
