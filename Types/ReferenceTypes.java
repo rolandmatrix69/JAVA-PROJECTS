@@ -13,6 +13,7 @@ public class ReferenceTypes {
         System.out.println(point2);
         // Unlike primitive types, Reference Types acts like literal mirrors and the
         // give out the value of the the variable they're assigned to, just like the
-        // example above
+        // example above. What is stored in the new variable is the address of the
+        // previous variable
     }
 }
