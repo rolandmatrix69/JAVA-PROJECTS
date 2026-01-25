@@ -35,14 +35,48 @@ public class ControlFlow {
          * CONTROL FLOW
          ******************************************/
 
-        System.out.print("Enter your Temperature: ");
-        int temp = input.nextInt();
+        // System.out.print("Enter your Temperature: ");
+        // int temp = input.nextInt();
 
-        if (temp > 30) {
-            System.out.println("It's a hot day\nDrink Plenty of water");
-        } else if (temp > 20)
-            System.out.println("It's a nice day");
-        else
-            System.out.println("It's a cold day");
+        // if (temp > 30) {
+        // System.out.println("It's a hot day\nDrink Plenty of water");
+        // } else if (temp > 20)
+        // System.out.println("It's a nice day");
+        // else
+        // System.out.println("It's a cold day");
+
+        // System.out.println("Enter your Income: ");
+        // int income = input.nextInt();
+        // String className = income > 100000 ? "First Class" : "Economy";// Ternary
+        // Operator
+        // System.out.println(className);
+
+        System.out.println("1. Admin");
+        System.out.println("2. Moderator");
+        System.out.println("3. Organizer");
+        System.out.print("Choose your role: ");
+
+        int role = input.nextInt();
+        String password;
+
+        switch (role) {
+            case 1:
+                System.out.print("Welcome, You're an admin\nInput your password: ");
+                password = input.next();
+                if (password.equals("TLDDC196")) {
+                    System.out.println("You've logged in as an admin!");
+                } else
+                    System.out.println("Wrong password!");
+                break;
+            case 2:
+                System.out.println("Welcome, you're a moderator");
+                break;
+            case 3:
+                System.out.println("Welcome, you're an organizer");
+                break;
+            default:
+                System.out.println("Welcome, You're a guest");
+                break;
+        }
     }
 }
