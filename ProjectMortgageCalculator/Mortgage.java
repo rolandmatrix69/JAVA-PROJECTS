@@ -33,7 +33,7 @@ public class Mortgage {
             monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEARS;
         }
 
-        while (years < 1 || years > 30) {
+        while (true) {
             System.out.print("Period (Years): ");
             years = scanner.nextByte();
             if (years >= 1 && years <= 30)
