@@ -20,7 +20,7 @@ public class ControlFlow {
         /************* Logical Operators ********************/
         // Used to combine one or more boolean expression
         // AND Operator: Bothe expressions have to be true
-        // int temperature = 32;
+        // int temperature = 27;
         // True when number is within range and false otherwise
         // boolean isWarm = temperature > 20 && temperature < 30;
         // System.out.println(isWarm);
@@ -48,8 +48,8 @@ public class ControlFlow {
 
         // System.out.println("Enter your Income: ");
         // int income = input.nextInt();
-        // String className = income > 100000 ? "First Class" : "Economy";// Ternary
-        // Operator
+        // String className = income > 100000 ? "First Class" : "Economy";//
+        // TernaryOperator
         // System.out.println(className);
 
         // System.out.println("1. Admin");
@@ -97,7 +97,7 @@ public class ControlFlow {
         // continue;
         // if (userInput.equals("quit"))
         // break;
-        // System.out.println(input);
+        // System.out.println(userInput);
         // }
 
         // FOR EACH LOOP
@@ -108,5 +108,13 @@ public class ControlFlow {
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
+        System.out.println("\n1. I have a class today\n2. I'd write exam today\nChoose an Option: ");
+        String conditionalAnswer = "Today is Saturday";
+        int choice = input.nextInt();
+
+        if (choice == 1 && choice == 2) {
+            System.out.println(conditionalAnswer);
+        }
+
     }
 }
