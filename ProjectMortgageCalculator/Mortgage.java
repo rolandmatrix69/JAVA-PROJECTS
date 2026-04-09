@@ -4,6 +4,17 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Mortgage {
+
+    public static double calculateMOrtgage(int principal, float annualInterest, byte years) {
+        final byte PERCENT = 100;
+        final byte MONTHS_IN_YEARS = 12;
+        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEARS;
+        short numberOfPayments = (short) (years * MONTHS_IN_YEARS);
+        double mortgage = principal * ((monthlyInterest * Math.pow((1 + monthlyInterest), numberOfPayments))
+                / (Math.pow((1 + monthlyInterest), numberOfPayments) - 1));
+        return mortgage;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -39,16 +50,5 @@ public class Mortgage {
 
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println("Mortgage: " + mortgageFormatted);
-    }
-
-    public static double calculateMOrtgage(int principal, float annualInterest, byte years) {
-        final byte PERCENT = 100;
-        final byte MONTHS_IN_YEARS = 12;
-        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEARS;
-        short numberOfPayments = (short) (years * MONTHS_IN_YEARS);
-        double mortgage = principal * ((monthlyInterest * Math.pow((1 + monthlyInterest), numberOfPayments))
-                / (Math.pow((1 + monthlyInterest), numberOfPayments) - 1));
-        return mortgage;
-
     }
 }

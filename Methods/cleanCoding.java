@@ -1,8 +1,10 @@
 package Methods;
 
+import java.util.Scanner;
+
 public class cleanCoding {
-    public static void greet(String name) {
-        System.out.println("Hello " + name);
+    public static String greet(String name) {
+        return ("Hello " + name);
     }
 
     public static int add(int a, int b) {
@@ -11,7 +13,13 @@ public class cleanCoding {
     }
 
     public static void main(String[] args) {
-        greet("John");
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String userInput = input.next();
+        String message = greet(userInput);
+        System.out.println(message);
+
         System.out.println(add(3, 5));
 
     }

@@ -1,6 +1,5 @@
 package Controlflow;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ControlFlow {
@@ -103,7 +102,9 @@ public class ControlFlow {
         // FOR EACH LOOP
 
         String[] fruits = { "Apple", "Orange", "Fruits" };
-        System.out.println(Arrays.toString(fruits));
+
+        for (int i = 0; i < fruits.length; i++)
+            System.out.println(fruits[i]);
 
         for (String fruit : fruits) {
             System.out.println(fruit);
